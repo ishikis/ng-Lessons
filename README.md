@@ -1,2 +1,2 @@
 # ng-Lessons
-Angular ders notlarım
+Angular ders notlarım..
