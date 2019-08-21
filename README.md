@@ -3,3 +3,6 @@ Angular ders notlarım..
 
 
 tekrar
+
+
+uzak degişiklik
