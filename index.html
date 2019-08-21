@@ -1,5 +1,229 @@
-test local
-Test 
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #444444;
+            font-family: 'Open Sans';
+            font-weight: 400;
+        }
 
 
-server test
+        pre {
+            white-space: pre;
+            word-wrap: normal;
+            overflow: auto !important;
+            background-color: rgba(0, 0, 0, .1);
+            border-radius: 3px;
+            font-size: 15px;
+            margin-bottom: 2rem;
+            padding: 10px 20px;
+            border: 1px solid transparent;
+        }
+
+        .cent {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cent">
+        <div class="col-7">
+            <h2><span id="Basit-GITKomutlari">Basit GIT Komutları</span></h2>
+            <ul>
+                <li><strong>git config</strong><br>
+                    En çok kullanılan git komutlarından biri, e-posta, kullanıcı adı ve dosya biçimi vs. için tercih
+                    edilen algoritma gibi kullanıcıya özgü yapılandırma değerlerini ayarlamak için kullanılabilen
+                    <strong>git config</strong>‘dir. Örneğin, aşağıdaki komut e-postayı ayarlamak için kullanılabilir:
+                    <p></p>
+                    <pre>git config --global user.email sam@google.com</pre>
+                </li>
+                <li><strong>git init</strong><br>
+                    Bu komut yeni bir GIT dizini oluşturmak için kullanılır. Örnek:<p></p>
+                    <pre>git init</pre>
+                </li>
+                <li><strong>git add</strong><br>
+                    <strong>Git add</strong> komutu, dizine dosyalar eklemek için kullanılabilir. Örneğin,;aşağıdaki
+                    komut,
+                    yerel dizinde bulunan temp.txt adlı bir dosyayı dizine ekleyecektir:<p></p>
+                    <pre>git add temp.txt</pre>
+                </li>
+                <li><strong>git clones</strong><br>
+                    <strong>git clone</strong> komutu dizin kontrol amaçları için kullanılır.<br>
+                    Dizin uzaktaki bir sunucuda bulunuyorsa, şunu kullanın:<p></p>
+                    <pre>git clone alex@93.188.160.58:/path/to/repository</pre>
+                    <p>Aksi durumda, yerel bir dizinin kopyası oluşturulmak istemiyorsa, şunu kullanın:</p>
+                    <pre>git clone /path/to/repository</pre>
+                </li>
+                <li><strong>git commit</strong><br>
+                    <strong>git commit</strong> komutu değişiklikleri kafaya uygulamak için kullanılır. Taahhüt edilen
+                    tüm
+                    değişikliklerin uzak dizine gitmeyeceğini unutmayın. Kullanımı:<p></p>
+                    <pre>git commit –m “Uygulama için komut mesajı”</pre>
+                </li>
+                <li><strong>git status</strong><br>
+                    <strong>git status</strong> komutu, henüz eklenmeyecek veya taahhüt edilen dosyalarla birlikte
+                    değiştirilen
+                    dosyaların listesini görüntüler. Kullanımı:<p></p>
+                    <pre>git status</pre>
+                </li>
+                <li><strong>git push</strong><br>
+                    <strong>git push</strong>, en çok kullanılan temel GIT komutlarından bir diğeridir. Basit bir itme
+                    ile,
+                    yapılan değişiklikleri çalışma diziniyle ilişkili uzak dizinin ana dalına gönderir. Örneğin:<p></p>
+                    <pre>git push origin master</pre>
+                </li>
+                <li><strong>git checkout</strong><br>
+                    <strong>git checkout</strong> komutu dal oluşturmak veya dallar arasında geçiş yapmak için
+                    kullanılır.
+                    Örneğin, aşağıdaki yeni bir dal oluşturur ve ona geçer:<p></p>
+                    <pre>command git checkout -b</pre>
+                    <p>Bir daldan diğerine geçmek için şunu kullanın:</p>
+                    <pre>git checkout</pre>
+                </li>
+                <li><strong>git remote</strong><br>
+                    <strong>git remote</strong> komutu bir kullanıcının bir uzak dizine bağlanmasını sağlar. Aşağıdaki
+                    komut şu
+                    anda yapılandırılmış uzak diiznleri listeler:<p></p>
+                    <pre>git remote –v</pre>
+                    <p>Bu komut da kullanıcının yerel dizini uzak bir dizine bağlamasını sağlar:</p>
+                    <pre>git remote add origin</pre>
+                </li>
+                <li><strong>git branch</strong><br>
+                    <strong>git branch</strong> komutu, dalları listelemek, oluşturmak ya da silmek için kullanılabilir.
+                    Dizinde
+                    bulunan tüm dalları listelemek için aşağıdakileri kullanın:<p></p>
+                    <pre>git branch</pre>
+                    <p>Bir dalı silmek için:</p>
+                    <pre>git branch –d</pre>
+                </li>
+                <li><strong>git pull</strong><br>
+                    Uzak depoda bulunan tüm değişiklikleri yerel çalışma dizinine birleştirmek için çekme komutu
+                    kullanılır.
+                    Kullanımı:<p></p>
+                    <pre>git pull</pre>
+                </li>
+                <li><strong>git merge</strong><br>
+                    <strong>git merge</strong> komutu, bir dalı etkin dala birleştirmek için kullanılır. Kullanımı:<p>
+                    </p>
+                    <pre>git merge</pre>
+                </li>
+                <li><strong>git diff</strong><br>
+                    <strong>git diff</strong> komutu çakışmaları listelemek için kullanılır. Çakışmaları taban dosyayla
+                    görüntülemek için<p></p>
+                    <pre>git diff --base</pre>
+                    <p>Aşağıdaki komut, birleşmeden önce birleştirilecek dallar arasındaki çakışmaları görüntülemek için
+                        kullanılır:</p>
+                    <pre>git diff</pre>
+                    <p>Mevcut çakışmaları listelemek için basitçe:</p>
+                    <pre>git diff</pre>
+                </li>
+                <li><strong>git tag</strong><br>
+                    Etiketleme, belirli taahhütleri basit kısımlara işaretlemek için kullanılır. Buna bir örnek:<p></p>
+                    <pre>git tag 1.1.0</pre>
+                </li>
+                <li><strong>git log</strong><br>
+                    <strong>git log</strong> komutu çalıştırıldığında ilgili ayrıntılarla birlikte bir daldaki
+                    taahhütlerin
+                    listesi çıkarılır. Örnek bir çıktı:<p></p>
+                    <pre>commit 15f4b6c44b3c8344caasdac9e4be13246e21sadw
+ Author: Alex Hunter 
+ Date: Mon Oct 1 12:56:29 2016 -0600</pre>
+                </li>
+                <li><strong>git reset</strong><br>
+                    Dizini ve çalışma dizinini son tamamlama durumuna sıfırlamak için, <strong>git reset</strong> komutu
+                    kullanılır. Kullanımı:<p></p>
+                    <pre>git reset --hard HEAD</pre>
+                </li>
+                <li><strong>git rm</strong><br>
+                    <strong>git rm</strong>, dosyaları dizinden ve çalışma dizininden kaldırmak için kullanılabilir.
+                    Kullanımı:
+                    <p></p>
+                    <pre>git rm filename.txt</pre>
+                </li>
+                <li><strong>git stash</strong><br>
+                    Muhtemelen daha az bilinen temel git komutlarından biridir. Hemen işlenmeyecek değişiklikleri geçici
+                    olarak
+                    kaydetmeye yardımcı olur. Kullanımı:<p></p>
+                    <pre>git stash</pre>
+                </li>
+                <li><strong>git show</strong><br>
+                    Herhangi bir git nesnesi hakkında bilgi görüntülemek için <strong>git show</strong> komutunu
+                    kullanın.
+                    Örneğin:<p></p>
+                    <pre>git show</pre>
+                </li>
+                <li><strong>git fetch</strong><br>
+                    <strong>git fetch</strong>, bir kullanıcının bu nesneleri şu anda yerel çalışma dizininde bulunmayan
+                    uzak
+                    dizinden almasına izin verir. Örnek kullanım:<p></p>
+                    <pre>git fetch origin</pre>
+                </li>
+                <li><strong>git Is-tree</strong><br>
+                    Bir ağaç nesnesini, her maddenin adı ve modu ile blob’un SHA-1 değerini birlikte görüntülemek için
+                    <strong>git ls-tree</strong> komutunu kullanın. Örneğin:<p></p>
+                    <pre>git ls-tree HEAD</pre>
+                </li>
+                <li><strong>git catfile</strong><br>
+                    SHA-1 değeri ile, <strong>git cat-file</strong> komutunu kullanarak bir nesnenin türünü
+                    görüntüleyin.
+                    Örneğin:<p></p>
+                    <pre>git cat-file –p d670460b4b4aece5915caf5c68d12f560a9fe3e4</pre>
+                </li>
+                <li><strong>git grep</strong><br>
+                    <strong>git grep</strong>, kullanıcıların içerik ağaçları üzerinden cümleler ve/veya kelimeler
+                    bulmalarını
+                    sağlar. Örneğin, tüm dosyalarda <em>www.hostinger.com</em> aramak için şu kullanılır:<p></p>
+                    <pre>git grep "www.hostinger.com"</pre>
+                </li>
+                <li><strong>gitk</strong><br>
+                    <strong>gitk</strong> komutu yerel bir dizin için grafiksel arayüzdür.<p></p>
+                    <pre>gitk</pre>
+                </li>
+                <li><strong>git instaweb</strong><br>
+                    <strong>git instaweb</strong> komutuyla bir web sunucusu yerel depo ile arabirimde çalıştırılabilir.
+                    Bir web
+                    tarayıcı da kendisine otomatik olarak yönlendirilir. Örneğin:<p></p>
+                    <pre>git instaweb –httpd=webrick</pre>
+                </li>
+                <li><strong>git gc</strong><br>
+                    Depoyu gereksiz dosyaları temizleyerek, çöp toplama yoluyla optimize etmek için aşağıdakini
+                    kullanın:<p></p>
+                    <pre>git gc</pre>
+                </li>
+                <li><strong>git archive</strong><br>
+                    <strong>git archive</strong> komutu, bir kullanıcının tek bir dizin ağacının bileşenlerini içeren
+                    bir zip
+                    veya tar dosyası oluşturmasını sağlar. Örneğin:<p></p>
+                    <pre>git archive --format=tar master</pre>
+                </li>
+                <li><strong>git prune</strong><br>
+                    <strong>git prune</strong> komutu aracılığıyla, gelen işaretçilerine sahip olmayan nesneler silinir.
+                    Kullanımı:<p></p>
+                    <pre>git prune</pre>
+                </li>
+                <li><strong>git fsck</strong><br>
+                    GIT dosya sisteminin bütünlüğünü kontrol etmek için <strong>git fsck</strong> komutunu kullanın.
+                    Bozuk
+                    nesneler tanımlanır:<p></p>
+                    <pre>git fsck</pre>
+                </li>
+                <li><strong>git rebase</strong><br>
+                    <strong>git rebase</strong> komutu, başka bir şubedeki taahütlerin tekrar uygulanması için
+                    kullanılır.
+                    Örneğin:<p></p>
+                    <pre>git rebase master</pre>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
